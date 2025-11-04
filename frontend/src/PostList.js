@@ -35,7 +35,9 @@ export default function PostList({ user }) {
         try {
             const resp = await authFetch(`/posts/${id}`, { method: 'DELETE' });
             const data = await resp.json();
-            if (!resp.ok) throw new Error(data.error || 'Delete failed');
+            if (!resp.ok) {
+                throw new Error(data.error || 'Delete failed');
+            }
             // refresh
             load();
         } 

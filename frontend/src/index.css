@@ -20,10 +20,6 @@ body, button, .btn {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.0em;
 }
-.nav-item {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .form-label {
   font-size: 1.6em;
 }
@@ -63,7 +59,13 @@ body {
   background: #fff;
   color: #cc3737;
 }
-
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-link{
+  font-size: 1.5em;
+}
 
 /* === Container === */
 .container {
