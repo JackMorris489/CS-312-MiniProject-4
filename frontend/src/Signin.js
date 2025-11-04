@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-const API = process.env.REACT_APP_API_BASE || 'http://localhost:8000/api';
+import { API_BASE } from './api';
 
 export default function Signin({ onSignin }) {
     const [form, setForm] = useState({ user_id: '', password: ''});
@@ -13,7 +13,7 @@ export default function Signin({ onSignin }) {
         e.preventDefault();
         setErr('');
         try {
-            const resp = await fetch(`${API}/signin`, {
+            const resp = await fetch(`${API_BASE}/signin`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),

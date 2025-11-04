@@ -1,5 +1,6 @@
 export const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000/api';
 
+// function to fetch the authentication token
 export async function authFetch(path, options = {}) {
     const token = localStorage.getItem('token');
     const headers = options.headers ? { ...options.headers } : {};

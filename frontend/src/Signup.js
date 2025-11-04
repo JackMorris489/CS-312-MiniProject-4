@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { API_BASE } from './api';
 
-const API = process.env.REACT_APP_API_BASE || 'http://localhost:8000/api';
-
+// signup function
 export default function Signup({ onSignup }) {
     const [form, setForm] = useState({ user_id: '', password: '', name: ''});
     const [err, setErr] = useState('');
@@ -16,7 +16,7 @@ export default function Signup({ onSignup }) {
         e.preventDefault();
         setErr('');
         try {
-            const resp = await fetch(`${API}/signup`, {
+            const resp = await fetch(`${API_BASE}/signup`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),
