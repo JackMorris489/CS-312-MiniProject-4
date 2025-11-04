@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1b5f86fe-8d39-4e15-89c0-a4f918832ba2",
+      "user_id": "1000111",
+      "password": "$2b$10$hYtzn8koonFTgE4h6ffej.tEU5saN9HowmOvCC3yy6u3pJ6I52.YS",
+      "name": "Jack Morris"
+    }
+  ],
+  "posts": [
+    {
+      "id": "13901f24-a26a-4baf-9f4f-426b4ce728c0",
+      "title": "HeHa",
+      "body": "AHahah\nKEK",
+      "authorId": "1b5f86fe-8d39-4e15-89c0-a4f918832ba2",
+      "authorUserId": "1000111",
+      "authorName": "Jack Morris",
+      "createdAt": "2025-11-04T05:33:43.341Z",
+      "updatedAt": "2025-11-04T05:34:07.708Z"
+    },
+    {
+      "id": "d4dabcf3-c0fc-4af5-9326-1cb404931de5",
+      "title": "Yippeee",
+      "body": "Lolol\n",
+      "authorId": "1b5f86fe-8d39-4e15-89c0-a4f918832ba2",
+      "authorUserId": "1000111",
+      "authorName": "Jack Morris",
+      "createdAt": "2025-11-04T05:33:59.141Z",
+      "updatedAt": "2025-11-04T05:33:59.141Z"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+/* === General Styles === */
+/* Set default Fonts, Font Sizes, and Font Colors */
+h1, h2, h3, h4, h5, h6, p, .card-title, .card-subtitle {
+  color: #ff00ff;
+  font-family: 'Press Start 2P', cursive;
+}
+h2, h5 {
+  font-size: 2.8em;
+  text-align: center;
+  text-shadow: 0 0 2px #ff00ff, 0 0 4px #00ffff;
+}
+h6 {
+  font-size: 1.3em;
+}
+p {
+  font-size: 1.6em;
+}
+body, button, .btn {
+  color: #f8f8f8;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.0em;
+}
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-label {
+  font-size: 1.6em;
+}
+
+/* Set general body parameters */
+body {
+  background: linear-gradient(135deg, #1a0033, #0d001a);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+/* === Navbar === */
+.navbar {
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  display: flex;
+  padding: 1.0em;
+  gap: 1.0em;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar a {
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.navbar a:hover {
+  background: #fff;
+  color: #cc3737;
+}
+
+
+/* === Container === */
+.container {
+  padding: 2em;
+  width: 50%;
+  min-width: 280px;
+  margin: auto;
+  flex: 1;
+}
+
+
+/* === Blog Cards === */
+.card {
+  background: rgba(25, 0, 51, 0.9);
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border: 2px solid #ff00ff;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 50000px;
+  min-width: 280px;
+}
+/* Blog Content */
+.card-text {
+  white-space: pre-line;
+  line-height: 1.8;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* === Actions === */
+/* .actions a = Edit, .actions button = Delete */
+.actions a, .actions button {
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 0.5em 1.0em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.actions button {
+  background: linear-gradient(45deg, #ff0066, #ffcc00);
+}
+.actions a:hover, .actions button:hover {
+  filter: brightness(1.5);
+}
+
+
+/* === Forms === */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 60%;
+  max-width: 2000px;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Form text areas and inputs */
+.form input, .form textarea {
+  background: rgba(0, 0, 0, 0.7);
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.0em;
+  padding: 0.8em;
+  border: 2px solid #ff00ff;
+  border-radius: 6px;
+}
+.form textarea {
+  max-height: 600px;
+  min-height: 120px;
+}
+.form input:focus, .form textarea:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+/* Update/Make Post buttons */
+.form button {
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.form button:hover {
+  filter: brightness(1.3);
+}
